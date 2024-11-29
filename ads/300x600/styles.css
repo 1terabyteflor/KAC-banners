@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    background: #1E3565;
+}
+
+.banner {
+    width: 300px;
+    overflow: hidden;
+    background: #1E3565;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+strong {
+    font-weight: bold;
+}
+
+sup {
+    font-size: 6px;
+    position: relative;
+    top: -0.8em;
+    left: -2px;
+}
+
+.positionAb {
+    position: absolute;
+}
+
+.fullSize {
+    width: 300px;
+    height: 600px;
+}
+
+.aC {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#clickTag {
+    width: 300px;
+    height: 600px;
+    cursor: pointer;
+    box-sizing: border-box;
+    top: -1px;
+    left: -1px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    background-size:contain;
+}
+
+#bg{
+    background-color: #1E3565;
+    width: 300px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+}
+
+
+#txt-1-a, #txt-2-a, #txt-3-a {
+    width: 300px;
+    scale: 70%;
+    height: 600px;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+}
+
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 300px;
+    height: 125px;
+    left: 0px;
+    bottom: 0;
+    background-color: white;
+    position: absolute;
+    padding: 25px;
+}
+
+#logo {
+    scale: 80%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#cta {
+    scale: 80%;
+    animation: pulse 1.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes slideDownFade {
+    0% {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    50% {
+        opacity: 1; 
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0; 
+    }
+}
+
+.animate {
+    animation: slideDownFade 3s forwards;
+}
