@@ -11,10 +11,9 @@
 </head>
 
 <body>
-    <div class="banner  bg">
-        <div id="txt-1-a" class="positionAb"><img src="../../assets/title1.png"></div>
-        <div id="txt-2-a" class="positionAb"><img src="../../assets/title2_2.png"></div>
-        <div id="txt-3-a" class="positionAb">
+    <div class="banner bg">
+        <div id="txt-1-a" class="positionAb"><img src="../../assets/title1.png"> <img src="../../assets/title2_2.png"></div>
+        <div id="txt-2-a" class="positionAb">
             <img src="../../assets/title3.png">
             <img src="../../assets/congress.png" style="scale: 25%;">
         </div>
@@ -31,31 +30,33 @@
     var clickTag = "https://www.google.com/";
 
 gsap.set("#txt-2-a", { opacity: 0 });
-gsap.set("#txt-3-a", { opacity: 0 });
 
 function animateText() {
     gsap.fromTo("#txt-1-a", { opacity: 0, scale: 0 }, { 
         opacity: 1, 
         scale: 0.7, 
-        duration: 1.5, 
+        duration: 2.5, 
         onComplete: function() {
             gsap.to("#txt-1-a", { opacity: 0, duration: 0.75, onComplete: function() {
                 gsap.fromTo("#txt-2-a", { opacity: 0, y: -50 }, { 
                     opacity: 1, 
                     y: 0, 
-                    duration: 1.5, 
+                    duration: 2.5, 
                     onComplete: function() {
-                        gsap.to("#txt-2-a", { opacity: 0, duration: 0.75, onComplete: function() {
-                            gsap.fromTo("#txt-3-a", { opacity: 0, y: -50 }, { 
-                                opacity: 1, 
-                                y: 0, 
-                                duration: 1.5, 
-                                onComplete: function() {
-                                    gsap.to("#txt-3-a", { opacity: 0, duration: 0.75, onComplete: animateText }); // Llama a la función para reiniciar la animación
+                                    gsap.to("#txt-2-a", { opacity: 0, duration: 0.75, onComplete: animateText }); // Llama a la función para reiniciar la animación
                                 }
-                            });
-                        }});
-                    }
+                    // onComplete: function() {
+                    //     gsap.to("#txt-2-a", { opacity: 0, duration: 0.75, onComplete: function() {
+                    //         gsap.fromTo("#txt-3-a", { opacity: 0, y: -50 }, { 
+                    //             opacity: 1, 
+                    //             y: 0, 
+                    //             duration: 1.5, 
+                    //             onComplete: function() {
+                    //                 gsap.to("#txt-3-a", { opacity: 0, duration: 0.75, onComplete: animateText }); // Llama a la función para reiniciar la animación
+                    //             }
+                    //         });
+                    //     }});
+                    // }
                 });
             }});
         }

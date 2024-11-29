@@ -25,7 +25,7 @@ body {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 250px;
 }
 
 strong {
@@ -45,7 +45,7 @@ sup {
 
 .fullSize {
     width: 300px;
-    height: 600px;
+    height: 250px;
 }
 
 .aC {
@@ -56,7 +56,7 @@ sup {
 
 #clickTag {
     width: 300px;
-    height: 600px;
+    height: 250px;
     cursor: pointer;
     box-sizing: border-box;
     top: -1px;
@@ -72,7 +72,7 @@ img{
 #bg{
     background-color: #1E3565;
     width: 300px;
-    height: 600px;
+    height: 250px;
     left: 0px;
     top: 0px;
 }
@@ -80,11 +80,10 @@ img{
 
 #txt-1-a, #txt-2-a, #txt-3-a {
     width: 300px;
-    scale: 70%;
-    height: 600px;
+    scale: 60%;
+    height: 250px;
     left: 0;
     top: 0;
-    padding-top: 80px;
 }
 
 .footer {
@@ -92,7 +91,7 @@ img{
     justify-content: space-between; 
     align-items: center; 
     width: 300px;
-    height: 125px;
+    height: 75px;
     left: 0px;
     bottom: 0;
     background-color: white;
@@ -101,7 +100,7 @@ img{
 }
 
 #logo {
-    scale: 80%;
+    scale: 60%;
 }
 
 @keyframes pulse {
