@@ -17,14 +17,14 @@ body {
 }
 
 .banner {
-    width: 300px;
+    width: 728px;
+    height: 90px;
     overflow: hidden;
     background: #1E3565;
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 strong {
@@ -42,11 +42,6 @@ sup {
     position: absolute;
 }
 
-.fullSize {
-    width: 300px;
-    height: 600px;
-}
-
 img{
     width: 100%;
     height: auto;
@@ -55,17 +50,16 @@ img{
 
 #bg{
     background-color: #1E3565;
-    width: 300px;
-    height: 600px;
+    width: 728px;
+    height: 90px;
     left: 0px;
     top: 0px;
 }
 
 
 #txt-1-a, #txt-3-a {
-    width: 300px;
-    scale: 70%;
-    height: 600px;
+    width: 728px;
+    height: 90px;
     left: 0;
     top: 0;
     padding-top: 80px;
@@ -83,15 +77,15 @@ img[src*="fondo5.png"] {
 }
 .footer {
     display: flex; 
+    flex-direction: column;
     justify-content: space-between; 
-    align-items: center; 
-    width: 300px;
+    align-items: end; 
+    width: 728px;
     height: 141px;
-    left: 0px;
-    bottom: 0;
+    right: 0;
+    top: 0;
     background-color: white;
     position: fixed;
-    padding: 25px;
     overflow: hidden;
     clip-path: polygon(0 4px, 100% 50px, 100% 100%, 0 100%);
 }

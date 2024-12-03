@@ -17,12 +17,11 @@ body {
 }
 
 .banner {
-    width: 300px;
+    width: 600px;
     overflow: hidden;
     background: #1E3565;
     display: flex;
     flex-direction: column; 
-    justify-content: center;
     align-items: center;
     height: 100vh;
 }
@@ -42,10 +41,6 @@ sup {
     position: absolute;
 }
 
-.fullSize {
-    width: 300px;
-    height: 600px;
-}
 
 img{
     width: 100%;
@@ -55,45 +50,28 @@ img{
 
 #bg{
     background-color: #1E3565;
-    width: 300px;
-    height: 600px;
+    width: 600px;
+    height: 100vh;
     left: 0px;
     top: 0px;
 }
 
 
-#txt-1-a, #txt-3-a {
-    width: 300px;
-    scale: 70%;
-    height: 600px;
+#txt-1-a, #txt-2-a, #txt-3-a {
+    width: 600px;
+    position: absolute;
+    top: 45px;
     left: 0;
-    top: 0;
-    padding-top: 80px;
+    height: 160px;
 }
 
-img[src*="Congress.png"] {
-    position: relative;
-    z-index: 2;
-    margin-top: 30px;
-}
-
-img[src*="fondo5.png"] {
-    position: relative; 
-    z-index: 0; 
-}
 .footer {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    width: 300px;
-    height: 141px;
-    left: 0px;
+    width: 600px;
+    height: 160px;
+    display: flex;
+    position: absolute;
+    right: 0;
     bottom: 0;
-    background-color: white;
-    position: fixed;
-    padding: 25px;
-    overflow: hidden;
-    clip-path: polygon(0 4px, 100% 50px, 100% 100%, 0 100%);
 }
 
 @keyframes pulse {
@@ -109,11 +87,13 @@ img[src*="fondo5.png"] {
 }
 
 #cta {
-    scale: 90%;
+    scale: 20%;
     animation: pulse 1.5s infinite;
     cursor: pointer;
-    margin-top: 40px;
-    margin-left: 30px;
+    position: absolute;
+    right: 1px;
+    left: 10px;
+    bottom: 0px;
 }
 
 #logo {
